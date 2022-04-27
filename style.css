@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Oswald:wght@300;700&family=Poppins:wght@700&family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+header {
+  padding: 20px;
+  background: #f5f5f6;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav ul li:first-child {
+  color: black;
+}
+nav ul li {
+  font-weight: 500;
+  font-size: 11px;
+  color: #959ba4;
+  font-weight: 500;
+  cursor: pointer;
+}
+header nav button {
+  font-size: 11px;
+  padding: 9px;
+  border: none;
+  background: white;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+}
+header nav image {
+  height: 23px;
+  width: 89px;
+}
+article {
+  padding-top: 60px;
+  width: 80%;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+article h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+.container {
+  display: flex;
+  gap: 100px;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+.con-1-1 ul li {
+  padding: 5px 20px;
+  border: 1px solid;
+  cursor: pointer;
+  border: 1px solid #9f9f9f;
+  font-size: 12px;
+  font-weight: 400;
+  color: #c6c6c6;
+}
+.con-1-1 ul li.active {
+  background-color: #833ae0;
+  border: #833ae0;
+  color: #fff;
+}
+.con-1-1 li:nth-child(2),
+.con-1-1 li:nth-child(3),
+.con-1-1 li:nth-child(4) {
+  border-left: none;
+}
+.con-1 p {
+  color: #9f9f9f;
+  font-size: 12px;
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+.con-1-0 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 257px;
+}
+.con-1-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 11px;
+  border: 1px solid #9f9f9f;
+}
+.con-1-2 input {
+  font-size: 36px;
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-weight: 700;
+}
+@media (max-width: 1000px) {
+  nav ul {
+    display: none;
+  }
+  .container {
+    flex-direction: column;
+  }
+  article {
+    width: 70%;
+    margin: auto;
+  }
+  .container{
+    gap: 50px;
+  }
+}
